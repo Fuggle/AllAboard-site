@@ -11,3 +11,14 @@ footer, header, nav {
   font: inherit;
   vertical-align: baseline;
 }
+
+/* global styles */
+body{ }
+h1 {}
+h2 {}
+h3 {}
+a {}
+.container { margin: 0 auto; width: 900px; }
+
+/* navigation styles */
+#nav {}
