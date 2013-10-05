@@ -1,3 +1,6 @@
+
+@import url(http://fonts.googleapis.com/css?family=Allura);
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 img, small, strong, sub, sup, b, i, dl, dt, dd, ol, ul, li,
@@ -7,18 +10,51 @@ footer, header, nav {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 14px;
   font: inherit;
   vertical-align: baseline;
 }
 
 /* global styles */
-body{ }
-h1 {}
-h2 {}
-h3 {}
+body{ font-family: Arial, sans-serif; }
+h1 { font-family: Allura, cursive; font-size: 2385%; }
+h1.pale { color:#eeeeee; }
+h1.dark { color:#5e5e5e; }
+h2 { font-weight: bold; font-size: 140%; }
+h2.green { color: #99CC00; }
+h2.blue { color: #33B5E5; }
+h2.yellow { color: #FFBB33; }
+h2.purple { color: #AA66CC; }
+h2.melon { color: #FF4444; }
+h2.teal { color: #00A099; }
+h3 {font-style: italic; color: #a8a8a8;}
 a {}
 .container { margin: 0 auto; width: 900px; }
+.heading-container { margin: 0 auto; width: 1300px; }
+.clear {clear: both;}
+
 
 /* navigation styles */
-#nav {}
+#nav-container { height: 100px;}
+.nav-filler { display: block; float: left; background-color: #666; }
+ul#nav { float: left; height: 100px; }
+ul#nav li {display: block; float: left; width: 250px;}
+ul#nav li a { background:  }
+
+
+
+/* different column widths (no. is pixel width)*/
+.col300 {width: 300px; float: left;}
+.col400 {width: 400px; float: left;}
+.col500 {width: 500px; float: left;}
+.col550 {width: 550px; float: left;}
+
+/* margins for columns*/
+.margin-right30 { margin-right: 30px; }
+.margin-right50 { margin-right: 50px; }
+
+/* product area */
+#product { background-color: #f9f9f9; color: #333; }
+
+/* about the team area */
+#team { background-color: #666666; color: #fff; }
