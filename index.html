@@ -8,14 +8,19 @@
 		<script type="text/javascript" src="js/scripts.js"></script>
 	</head>
 	<body>
-		<div id="nav">
-			<ul>
-				<li><a href="#product">About the app</a></li>
-				<li><a href="#team">Made by</a></li>
-			</ul>
+		<div id="nav-bar">
+			<div class="nav-filler"></div>
+			<div id="nav-container">
+				<a href="#product" class="col300"><img src="assets/all-aboard-logo.jpg" alt="AllAboard logo" /></a>
+				<ul id="nav">
+					<li><a href="#features">Features</a></li>
+					<li><a href="#team">Made by</a></li>
+				</ul>
+			</div>
+			<div class="nav-filler"></div>
 		</div>
 		<div id="product">
-			<div class="container">
+			<div class="container product-height">
 				<div class="col300 margin-right50">
 					<p>AllAboard is a lorem ipsum dolor sit amet consectetur adipiscing elit. Sed et vulputate risus. Fusce ac mauris eleifend, pulvinar orci sit amet, pulvinar sem.</p>
 					<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
@@ -23,22 +28,153 @@
 					<a href="#" class="download">Download for Android</a>
 					<a href="#" class="gplay"></a>
 				</div>
-				<div col="col550"><img src="http://placekitten.com/g/550/500" alt="A basket of adorable kittens glare attentively at something." /></div>
+				<div class="col550"><img src="http://placekitten.com/g/550/500" alt="A basket of adorable kittens glare attentively at something." /></div>
 			</div>
-			<div class="heading-container">
+			<div id="features" class="heading-container">
 				<h1 class="pale">Features</h1>
 			</div>
-			<div class="container">
-				<!-- container for content... note: headings overhang content, so all content needs padding either side. -->
-				<p>Content for product here</p>
+			<div class="container feature-height">
+				<div class="clear first-margin feature-item">
+					<div class="col400 inline margin-right25">
+						<h2 class="blue">Find timetables by stop</h2>
+						<p>AllAboard is a lorem ipsum dolor sit amet consectetur adipiscing elit. Sed et vulputate risus. Fusce ac mauris eleifend, pulvinar orci sit amet, pulvinar sem.</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+					</div>
+					<div class="col470 inline">
+						<img src="assets/stop-map.png" alt="An android devices shows the AllAboard application. The screen is a gps map which shows the users location and stops nearby, marked with bus, train, or ferry symbols.">
+					</div>
+				</div>
+				<div class="clear feature-item">
+					<div class="col470 inline margin-right25">
+						<img src="assets/timetable.jpg" alt="An android device shows the AllAboard applcation. The screen is a an example of a top timetable display.">
+					</div>
+					<div class="col400 inline">
+						<h2 class="teal">Select favourite services</h2>
+						<p>AllAboard is a lorem ipsum dolor sit amet consectetur adipiscing elit. Sed et vulputate risus. Fusce ac mauris eleifend, pulvinar orci sit amet, pulvinar sem.</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+					</div>
+				</div>
+				<div class="clear feature-item">
+					<div class="col400 inline margin-right25">
+						<h2 class="melon">Easily see your favourite services</h2>
+						<p>AllAboard is a lorem ipsum dolor sit amet consectetur adipiscing elit. Sed et vulputate risus. Fusce ac mauris eleifend, pulvinar orci sit amet, pulvinar sem.</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+					</div>
+					<div class="col470 inline">
+						<img src="assets/timetable-favs.jpg" alt="An android device shows the AllAboard application. The timetable has been filtered to show only favourite services.">
+					</div>
+				</div>
+				<div class="clear feature-item">
+					<div class="col470 inline margin-right25">
+						<img src="assets/abstract-route.jpg" alt="An android device shows the AllAboard application. A simple route display shows where the bus is along it's journey.">
+					</div>
+					<div class="col400 inline">
+						<h2 class="yellow">An updating route display</h2>
+						<p>AllAboard is a lorem ipsum dolor sit amet consectetur adipiscing elit. Sed et vulputate risus. Fusce ac mauris eleifend, pulvinar orci sit amet, pulvinar sem.</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+					</div>
+				</div>
+				<div class="clear feature-item">
+					<div class="col400 inline margin-right25">
+						<h2 class="green">Dynamic map view</h2>
+						<p>AllAboard is a lorem ipsum dolor sit amet consectetur adipiscing elit. Sed et vulputate risus. Fusce ac mauris eleifend, pulvinar orci sit amet, pulvinar sem.</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+					</div>
+					<div class="col470 inline">
+						<img src="assets/dynamic-map.jpg" alt="An android devices shows the AllAboard application. A gps map is shown, displaying the bus route and each stop along it.">
+					</div>
+				</div>
+				<div class="clear feature-item">
+					<div class="col470 inline margin-right25">
+						<img src="assets/grouping.jpg" alt="An android devices shows the AllAboard application. The screen shows a favourites management view, displaying different groups that services have been organised into.">
+					</div>
+					<div class="col400 inline">
+						<h2 class="purple">Colour grouping</h2>
+						<p>AllAboard is a lorem ipsum dolor sit amet consectetur adipiscing elit. Sed et vulputate risus. Fusce ac mauris eleifend, pulvinar orci sit amet, pulvinar sem.</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div id="team">
+		<div id="team" class="clear">
 			<div class="heading-container">
 				<h1 class="dark">Made by</h1>
 			</div>
-			<div class="container">
-				<p>Team information here</p>
+			<div class="container team-height">
+				<div class="col350 margin-right50">
+					<h2 class="larger melon right">Engine Number Nine</h2>
+				</div>
+				<div class="col500">
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed et vulputate risus. Fusce ac mauris eleifend, pulvinar orci sit amet, pulvinar sem.</p>
+					<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+					<p>Ut dignissim lacus id nulla congue pellentesque. Nulla tempor porttitor tempor.</p>
+				</div>
+				<div class="member clear">
+					<div class="col350 margin-right50">
+						<img src="http://placekitten.com/g/210/210" alt="A kitten perches on a hand, looking down." />
+					</div>
+					<div class="col500">
+						<h3 class="yellow">Khoa Tran</h3>
+						<p class="caption">UX design, Programming, Web development</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+						<p>Ut dignissim lacus id nulla congue pellentesque. Nulla tempor porttitor tempor.</p>
+					</div>
+				</div>
+				<div class="member clear">
+					<div class="col350 margin-right50">
+						<img src="http://placekitten.com/g/210/210" alt="A kitten perches on a hand, looking down." />
+					</div>
+					<div class="col500">
+						<h3 class="green">Racheal Smith</h3>
+						<p class="caption">UX design, Graphic design, Web development</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+						<p>Ut dignissim lacus id nulla congue pellentesque. Nulla tempor porttitor tempor.</p>
+					</div>
+				</div>
+				<div class="member clear">
+					<div class="col350 margin-right50">
+						<img src="http://placekitten.com/g/210/210" alt="A kitten perches on a hand, looking down." />
+					</div>
+					<div class="col500">
+						<h3 class="purple">Callum Buckmaster</h3>
+						<p class="caption">Programming</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+						<p>Ut dignissim lacus id nulla congue pellentesque. Nulla tempor porttitor tempor.</p>
+					</div>
+				</div>
+				<div class="member clear">
+					<div class="col350 margin-right50">
+						<img src="http://placekitten.com/g/210/210" alt="A kitten perches on a hand, looking down." />
+					</div>
+					<div class="col500">
+						<h3 class="blue">Paola Valle</h3>
+						<p class="caption">UX design, Graphic design</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+						<p>Ut dignissim lacus id nulla congue pellentesque. Nulla tempor porttitor tempor.</p>
+					</div>
+				</div>
+				<div class="member clear">
+					<div class="col350 margin-right50">
+						<img src="http://placekitten.com/g/210/210" alt="A kitten perches on a hand, looking down." />
+					</div>
+					<div class="col500">
+						<h3 class="teal">Tommy Ye</h3>
+						<p class="caption">Programming</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+						<p>Ut dignissim lacus id nulla congue pellentesque. Nulla tempor porttitor tempor.</p>
+					</div>
+				</div>
+				<div class="member clear">
+					<div class="col350 margin-right50">
+						<img src="http://placekitten.com/g/210/210" alt="A kitten perches on a hand, looking down." />
+					</div>
+					<div class="col500">
+						<h3 class="melon">Daniel Iskander</h3>
+						<p class="caption">UX design</p>
+						<p>Nullam fermentum massa in lectus interdum volutpat. Proin venenatis arcu tempor, dignissim ante a, aliquet dolor. Quisque vel mauris quis augue pulvinar viverra. Ut faucibus lorem vitae dolor porta, sit amet aliquam eros rhoncus.</p>
+						<p>Ut dignissim lacus id nulla congue pellentesque. Nulla tempor porttitor tempor.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
