@@ -47,35 +47,35 @@ $(document).ready(function(){
 
 });
 
-	//called on the start point, and hand out classes in order until it runs out of h2 and h3 elements
-	function colourHeadings(s, c){
+//called on the start point, and hand out classes in order until it runs out of h2 and h3 elements
+function colourHeadings(s, c){
 
-		var pageCount = s;
-		var colours = ["blue","teal","melon","yellow","green","purple"];
-		var arrayCount = 1;
+	var pageCount = s;
+	var colours = ["blue","teal","melon","yellow","green","purple"];
+	var arrayCount = 1;
 
-		for(var i = 0; i <= c; i++){
-			console.log("pagecount: " +pageCount + " ---- arrayCount: " + arrayCount + "   ---ind: " + i);
-			if (i == 0) {
-				$("h2, h3").eq(s).addClass(colours[i]);
-			} else {
-				$("h2, h3").eq(pageCount).addClass(colours[arrayCount]);
-			};
+	for(var i = 0; i <= c; i++){
+		console.log("pagecount: " +pageCount + " ---- arrayCount: " + arrayCount + "   ---ind: " + i);
+		if (i == 0) {
+			$("h2, h3").eq(s).addClass(colours[i]);
+		} else {
+			$("h2, h3").eq(pageCount).addClass(colours[arrayCount]);
+		};
 
-			if (pageCount == c) {
-				pageCount = 0;
-			} else { 
-				pageCount = pageCount + 1;
-			};
+		if (pageCount == c) {
+			pageCount = 0;
+		} else { 
+			pageCount = pageCount + 1;
+		};
 
-			if (arrayCount == colours.length - 1) {
-				arrayCount = 1;
-			} else {
-				arrayCount = arrayCount + 1;
-			};
+		if (arrayCount == colours.length - 1) {
+			arrayCount = 1;
+		} else {
+			arrayCount = arrayCount + 1;
+		};
 
-		}
 	}
+}
 
 
 
